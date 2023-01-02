@@ -1,13 +1,15 @@
-Apex DML (Data Manipulation Language) is a part of the Apex programming language that allows you to perform database operations in Salesforce. Apex DML enables you to insert, update, delete, and upsert records in the database. You can use Apex DML to manipulate both standard and custom objects.
+###Apex DML (Data Manipulation Language) is a part of the Apex programming language that allows you to perform database operations in Salesforce. Apex DML enables you to insert, update, delete, and upsert records in the database. You can use Apex DML to manipulate both standard and custom objects.
 
 Here is an example of an Apex DML statement that inserts a new account record:
 Account a = new Account(Name='My Account');
 insert a;
 
 You can also use Apex DML to update existing records:
-Account a = [SELECT Id, Name FROM Account WHERE Name='My Account'];
+```js Account a = [SELECT Id, Name FROM Account WHERE Name='My Account'];
 a.Name = 'Updated Account Name';
 update a;
+
+```
 
 To delete a record, you can use the delete keyword:
 
